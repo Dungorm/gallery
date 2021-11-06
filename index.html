@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title>Галерея для сайта с эффектом размытия</title>
+		<link rel="stylesheet" type="text/css" href="css/normalize.css" />
+		<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.3.0/css/font-awesome.min.css" />
+		<link rel="stylesheet" type="text/css" href="css/demo.css" />
+		<link rel="stylesheet" type="text/css" href="css/gallery.css" />
+		<!--[if IE]>
+		<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+		<script src="js/TweenMax.min.js"></script>
+		<script src="js/jquery.min.js"></script>
+	</head>
+	<body>
+		<svg xmlns="http://www.w3.org/2000/svg" version="1.1" class="filters hidden">
+			<defs>
+			  <filter id="blur">
+				  <feGaussianBlur in="SourceGraphic" stdDeviation="0,0" />
+			  </filter>
+			</defs>
+		</svg>
+		<div class="container">
+			<header class="header">
+				<h1>Эффект размытия с помощью SVG<span>Автор <!--noindex--><a rel="nofollow" href="http://twitter.com/lucasbebber" target="_blank">Lucas Bebber</a><!--/noindex--></span></h1>
+			</header>
+			<div class="content">
+				<div class="gallery">
+					<ul class="gallery-pictures">
+						<li class="gallery-picture">
+							<img src="img/1.jpg" alt="img01">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/2.jpg" alt="img02">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/3.jpg" alt="img03">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/4.jpg" alt="img04">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/5.jpg" alt="img05">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/6.jpg" alt="img06">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/7.jpg" alt="img07">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/8.jpg" alt="img08">
+						</li>
+						<li class="gallery-picture">
+							<img src="img/9.jpg" alt="img09">
+						</li>
+					</ul>
+					<div class="gallery-pagination">
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+						<button class="gallery-pagination-dot"></button>
+					</div>
+				</div>
+				<p class="iin">Нажмите кнопки переключения изображений, которые находятся далеко друг от друга.</p>
+			</div>
+		</div>
+		<script src="js/gallery.js"></script>
+	</body>
+</html>
